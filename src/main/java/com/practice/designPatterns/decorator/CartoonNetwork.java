@@ -15,7 +15,6 @@ public class CartoonNetwork extends ChannelDecorator {
 		} else {
 			this.getSatelliteTV().show(channelNumber);
 		}
-
 	}
 
 	@Override

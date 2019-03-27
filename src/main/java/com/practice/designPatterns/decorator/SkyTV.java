@@ -9,7 +9,7 @@ public class SkyTV implements SatelliteTV {
 	@Override
 	public void show(int channelNumber) {
 		if(channelNumber<100){
-			System.out.println("Basic New Channels");
+			System.out.println("Displaying basic channels");
 		} else {
 			System.out.println("You are not subcribed to this channel. Please subscribe");
 		}
