@@ -6,12 +6,12 @@ public class ProxyRunner {
 
 	public static void main(String[] args) {
 
-	Scanner scanner = new Scanner(System.in);
+		try (Scanner scanner = new Scanner(System.in)) {
+			String site = scanner.next();
 
-	String site = scanner.next();
-	
-	NetworkSetting network = new NetworkSetting();
-	ISP isp = network.getInternet();
-	System.out.println(isp.getResource(site));
+			NetworkSetting network = new NetworkSetting();
+			ISP isp = network.getInternet();
+			System.out.println(isp.getResource(site));
+		}
 	}
 }
